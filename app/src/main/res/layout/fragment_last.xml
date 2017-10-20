@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.studio.sameer.myapplication.lastFragment"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/tempText1"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toplayout"
+        android:layout_below="@id/tempText1"
+        android:background="@color/DarkYellow"
+        >
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchableSpinner1"
+            android:entries="@array/allCurrencies"
+            android:padding="20dp"
+            android:layout_marginBottom="13dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/toplayout"
+        android:id="@+id/tempText2"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondSearchableSpinner"
+        android:layout_below="@+id/tempText2"
+        android:background="@color/DarkYellow"
+        >
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchableSpinner2"
+            android:entries="@array/allCurrencies"
+            android:padding="20dp"
+            android:layout_marginBottom="13dp"
+            />
+
+
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/secondSearchableSpinner"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:hint="Enter Value"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+
+
+
+
+    <!--<com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/spinner"-->
+        <!--android:entries="@array/allCurrencies"-->
+        <!--android:padding="20dp"-->
+        <!--android:background="@color/DarkYellow"-->
+        <!--android:layout_marginBottom="13dp"-->
+        <!--/>-->
+    <!--<Spinner-->
+        <!--android:id="@+id/spinner"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+<!--/>-->
+
+
+</RelativeLayout>

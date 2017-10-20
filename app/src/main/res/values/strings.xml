@@ -1,0 +1,215 @@
+<resources>
+    <string name="app_name">Currency Rates PRO</string>
+    <string name="title_home">All Currency</string>
+    <string name="title_dashboard">Your Currency</string>
+    <string name="title_notifications">Converter</string>
+    <!--<string name="title_activity_test_layout">test_layout</string>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--<string-array name="allCurrencies">-->
+        <!--<item>AED:United Arab Emirates dirham</item>-->
+        <!--<item>AFN:Afghan afghani</item>-->
+        <!--<item>ALL:Albanian lek</item>-->
+        <!--<item>AMD:Armenian dram</item>-->
+        <!--<item>ZWL:Zimbabwean dollar</item>-->
+        <!--<item>GBP:Great Britain Pound</item>-->
+        <!--<item>INR:Indian Rupees </item>-->
+    <!--</string-array>-->
+    <string-array name="allCurrencies">
+        <item>AED:United Arab Emirates dirham</item>
+        <item>AFN:Afghan afghani</item>
+        <item>ALL:Albanian lek</item>
+        <item>AMD:Armenian dram</item>
+        <item>ANG:Netherlands Antillean guilder</item>
+        <item>AOA:Angolan kwanza</item>
+        <item>ARS:Argentine peso</item>
+        <item>AUD:Australian dollar</item>
+        <item>AWG:Aruban florin</item>
+        <item>AZN:Azerbaijani manat</item>
+        <item>BAM:Bosnia and Herzegovina convertible mark</item>
+        <item>BBD:Barbados dollar</item>
+        <item>BDT:Bangladeshi taka</item>
+        <item>BGN:Bulgarian lev</item>
+        <item>BHD:Bahraini dinar</item>
+        <item>BIF:Burundian franc</item>
+        <item>BMD:Bermudian dollar</item>
+        <item>BND:Brunei dollar</item>
+        <item>BOB:Boliviano</item>
+        <item>BRL:Brazilian real</item>
+        <item>BSD:Bahamian dollar</item>
+        <item>BTN:Bhutanese ngultrum</item>
+        <item>BWP:Botswana pula</item>
+        <item>BYN:New Belarusian ruble</item>
+        <item>BYR:Belarusian ruble</item>
+        <item>BZD:Belize dollar</item>
+        <item>CAD:Canadian dollar</item>
+        <item>CDF:Congolese franc</item>
+        <item>CHF:Swiss franc</item>
+        <item>CLF:Unidad de Fomento</item>
+        <item>CLP:Chilean peso</item>
+        <item>CNY:Renminbi|Chinese yuan</item>
+        <item>COP:Colombian peso</item>
+        <item>CRC:Costa Rican colon</item>
+        <item>CUC:Cuban convertible peso</item>
+        <item>CUP:Cuban peso</item>
+        <item>CVE:Cape Verde escudo</item>
+        <item>CZK:Czech koruna</item>
+        <item>DJF:Djiboutian franc</item>
+        <item>DKK:Danish krone</item>
+        <item>DOP:Dominican peso</item>
+        <item>DZD:Algerian dinar</item>
+        <item>EGP:Egyptian pound</item>
+        <item>ERN:Eritrean nakfa</item>
+        <item>ETB:Ethiopian birr</item>
+        <item>EUR:Euro</item>
+        <item>FJD:Fiji dollar</item>
+        <item>FKP:Falkland Islands pound</item>
+        <item>GBP:Pound sterling</item>
+        <item>GEL:Georgian lari</item>
+        <item>GHS:Ghanaian cedi</item>
+        <item>GIP:Gibraltar pound</item>
+        <item>GMD:Gambian dalasi</item>
+        <item>GNF:Guinean franc</item>
+        <item>GTQ:Guatemalan quetzal</item>
+        <item>GYD:Guyanese dollar</item>
+        <item>HKD:Hong Kong dollar</item>
+        <item>HNL:Honduran lempira</item>
+        <item>HRK:Croatian kuna</item>
+        <item>HTG:Haitian gourde</item>
+        <item>HUF:Hungarian forint</item>
+        <item>IDR:Indonesian rupiah</item>
+        <item>ILS:Israeli new shekel</item>
+        <item>INR:Indian rupee</item>
+        <item>IQD:Iraqi dinar</item>
+        <item>IRR:Iranian rial</item>
+        <item>ISK:Icelandic króna</item>
+        <item>JMD:Jamaican dollar</item>
+        <item>JOD:Jordanian dinar</item>
+        <item>JPY:Japanese yen</item>
+        <item>KES:Kenyan shilling</item>
+        <item>KGS:Kyrgyzstani som</item>
+        <item>KHR:Cambodian riel</item>
+        <item>KMF:Comoro franc</item>
+        <item>KPW:North Korean won</item>
+        <item>KRW:South Korean won</item>
+        <item>KWD:Kuwaiti dinar</item>
+        <item>KYD:Cayman Islands dollar</item>
+        <item>KZT:Kazakhstani tenge</item>
+        <item>LAK:Lao kip</item>
+        <item>LBP:Lebanese pound</item>
+        <item>LKR:Sri Lankan rupee</item>
+        <item>LRD:Liberian dollar</item>
+        <item>LSL:Lesotho loti</item>
+        <item>LYD:Libyan dinar</item>
+        <item>MAD:Moroccan dirham</item>
+        <item>MDL:Moldovan leu</item>
+        <item>MGA:Malagasy ariary</item>
+        <item>MKD:Macedonian denar</item>
+        <item>MMK:Myanmar kyat</item>
+        <item>MNT:Mongolian tögrög</item>
+        <item>MOP:Macanese pataca</item>
+        <item>MRO:Mauritanian ouguiya</item>
+        <item>MUR:Mauritian rupee</item>
+        <item>MVR:Maldivian rufiyaa</item>
+        <item>MWK:Malawian kwacha</item>
+        <item>MXN:Mexican peso</item>
+        <item>MXV:Mexican Unidad de Inversion</item>
+        <item>MYR:Malaysian ringgit</item>
+        <item>MZN:Mozambican metical</item>
+        <item>NAD:Namibian dollar</item>
+        <item>NGN:Nigerian naira</item>
+        <item>NIO:Nicaraguan córdoba</item>
+        <item>NOK:Norwegian krone</item>
+        <item>NPR:Nepalese rupee</item>
+        <item>NZD:New Zealand dollar</item>
+        <item>OMR:Omani rial</item>
+        <item>PAB:Panamanian balboa</item>
+        <item>PEN:Peruvian Sol</item>
+        <item>PGK:Papua New Guinean kina</item>
+        <item>PHP:Philippine peso</item>
+        <item>PKR:Pakistani rupee</item>
+        <item>PLN:Polish złoty</item>
+        <item>PYG:Paraguayan guaraní</item>
+        <item>QAR:Qatari riyal</item>
+        <item>RON:Romanian leu</item>
+        <item>RSD:Serbian dinar</item>
+        <item>RUB:Russian ruble</item>
+        <item>RWF:Rwandan franc</item>
+        <item>SAR:Saudi riyal</item>
+        <item>SBD:Solomon Islands dollar</item>
+        <item>SCR:Seychelles rupee</item>
+        <item>SDG:Sudanese pound</item>
+        <item>SEK:Swedish krona</item>
+        <item>SGD:Singapore dollar</item>
+        <item>SHP:Saint Helena pound</item>
+        <item>SLL:Sierra Leonean leone</item>
+        <item>SOS:Somali shilling</item>
+        <item>SRD:Surinamese dollar</item>
+        <item>SSP:South Sudanese pound</item>
+        <item>STD:São Tomé and Príncipe dobra</item>
+        <item>SVC:Salvadoran colón</item>
+        <item>SYP:Syrian pound</item>
+        <item>SZL:Swazi lilangeni</item>
+        <item>THB:Thai baht</item>
+        <item>TJS:Tajikistani somoni</item>
+        <item>TMT:Turkmenistani manat</item>
+        <item>TND:Tunisian dinar</item>
+        <item>TOP:Tongan paʻanga</item>
+        <item>TRY:Turkish lira</item>
+        <item>TTD:Trinidad and Tobago dollar</item>
+        <item>TWD:New Taiwan dollar</item>
+        <item>TZS:Tanzanian shilling</item>
+        <item>UAH:Ukrainian hryvnia</item>
+        <item>UGX:Ugandan shilling</item>
+        <item>USD:United States dollar</item>
+        <item>UYI:Uruguay Peso en Unidades Indexadas</item>
+        <item>UYU:Uruguayan peso</item>
+        <item>UZS:Uzbekistan som</item>
+        <item>VEF:Venezuelan bolívar</item>
+        <item>VND:Vietnamese đồng</item>
+        <item>VUV:Vanuatu vatu</item>
+        <item>WST:Samoan tala</item>
+        <item>XAF:Central African CFA franc</item>
+        <item>XCD:East Caribbean dollar</item>
+        <item>XOF:West African CFA franc</item>
+        <item>XPF:CFP franc</item>
+        <item>YER:Yemeni rial</item>
+        <item>ZAR:South African rand</item>
+        <item>ZMW:Zambian kwacha</item>
+        <item>ZWL:Zimbabwean dollar</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_about">aboutActivity</string>
+    <string name="searchableSpinner">"Copyright 2015-2016 Mitesh Pithadiya
+
+Licensed under the Apache License, Version 2.0 (the 'License');
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an 'AS IS' BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License."</string>
+    <string name="gson">"Copyright 2008 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License."</string>
+    <string name="allCurrency"><u>All Currency</u></string>
+    <string name="yourCurrency"><u>Your Currency</u></string>
+    <string name="currencyConverter"><u>Currency Converter</u></string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>
