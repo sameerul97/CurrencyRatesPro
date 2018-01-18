@@ -16,6 +16,39 @@
         <!--<item>GBP:Great Britain Pound</item>-->
         <!--<item>INR:Indian Rupees </item>-->
     <!--</string-array>-->
+    <string-array name="allcurrencies2">
+        <item>AUD: Australian dollar </item>
+        <item>BGN: Bulgarian lev</item>
+        <item>BRL: Brazilian real </item>
+        <item>CAD: Canadian dollar</item>
+        <item>CHF: Swiss franc</item>
+        <item>CNY: Chinese yuan renminbi</item>
+        <item>CZK: Czech koruna </item>
+        <item>DKK: Danish krone </item>
+        <item>GBP: Pound sterling </item>
+        <item>HKD: Hong Kong dollar </item>
+        <item>HRK: Croatian kuna </item>
+        <item>HUF: Hungarian forint</item>
+        <item>IDR: Indonesian rupiah</item>
+        <item>ILS: Israeli shekel </item>
+        <item>INR: Indian rupee </item>
+        <item>JPY: Japanese yen</item>
+        <item>KRW: South Korean won</item>
+        <item>MXN: Mexican peso </item>
+        <item>MYR: Malaysian ringgit</item>
+        <item>NOK: Norwegian krone</item>
+        <item>NZD: New Zealand dollar </item>
+        <item>PHP: Philippine piso </item>
+        <item>PLN: Polish zloty </item>
+        <item>RON: Romanian leu </item>
+        <item>RUB: Russian rouble</item>
+        <item>SEK: Swedish krona</item>
+        <item>SGD: Singapore dollar</item>
+        <item>THB: Thai baht </item>
+        <item>TRY: Turkish lira </item>
+        <item>USD: US dollar</item>
+        <item>ZAR: South African rand</item>
+    </string-array>
     <string-array name="allCurrencies">
         <item>AED:United Arab Emirates dirham</item>
         <item>AFN:Afghan afghani</item>
