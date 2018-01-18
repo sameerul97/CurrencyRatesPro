@@ -1,21 +1,14 @@
 package com.studio.sameer.myapplication;
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.Color;
-import android.os.Bundle;
-//import android.app.Fragment;
-import android.support.v4.app.Fragment;
 
+import android.content.Context;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.NumberPicker;
 import android.widget.ProgressBar;
-import android.widget.TableRow;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -24,22 +17,17 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-import static com.studio.sameer.myapplication.R.id.container;
+//import android.app.Fragment;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class currencyconvertFragment extends Fragment {
-    public currencyconvertFragment() {
-        // Required empty public constructor
-    }
     private RequestQueue queue;
     private LayoutInflater inflater;
     private View v;
@@ -48,6 +36,11 @@ public class currencyconvertFragment extends Fragment {
     private NumberPicker picker;
     private NumberPicker picker2;
     private String allcurrencies;
+
+    public currencyconvertFragment() {
+        // Required empty public constructor
+    }
+
     @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
                              final Bundle savedInstanceState) {
@@ -100,40 +93,6 @@ public class currencyconvertFragment extends Fragment {
                 getString();
             }
         });
-//        final String allcurrencies[] = {  "AED:United Arab Emirates dirham",
-//                "AFN:Afghan afghani",
-//                "ALL:Albanian lek",
-//                "AMD:Armenian dram",
-//                "ALL:Albanian lek",
-//                "ZWL:Zimbabwean dollar",
-//                "GBP:Great Britain Pound",
-//                "INR:Indian Rupees"};
-//        ArrayList<String> list = new ArrayList<String>();
-//        list.add("one");
-//
-//        list.add("two");
-//        list.add("three");
-//
-//        StringBuilder sb = new StringBuilder();
-//        for (String s : list)
-//        {
-//            sb.append(s);
-//            sb.append("\t");
-//        }
-//
-//        System.out.println(arrayList.toString());
-////        picker.setMinValue(0);
-////        picker.setMaxValue(allcurrencies.length-1);
-//////        picker.setDisplayedValues( new String[] { "AED", "AFN", "ALL", "AMD", "ANG", "AOA", "ARS", "AUD", "AWG", "AZN", "BAM", "BBD", "BDT", "BGN", "BHD", "BIF", "BMD", "BND", "BOB", "BOV", "BRL", "BSD", "BTN", "BWP", "BYR", "BZD", "CAD", "CDF", "CHE", "CHF", "CHW", "CLF", "CLP", "CNY", "COP", "COU", "CRC", "CUC", "CUP", "CVE", "CZK", "DJF", "DKK", "DOP", "DZD", "EGP", "ERN", "ETB", "EUR", "FJD", "FKP", "GBP", "GEL", "GHS", "GIP", "GMD", "GNF", "GTQ", "GYD", "HKD", "HNL", "HRK", "HTG", "HUF", "IDR", "ILS", "INR", "IQD", "IRR", "ISK", "JMD", "JOD", "JPY", "KES", "KGS", "KHR", "KMF", "KPW", "KRW", "KWD", "KYD", "KZT", "LAK", "LBP", "LKR", "LRD", "LSL", "LTL", "LVL", "LYD", "MAD", "MDL", "MGA", "MKD", "MMK", "MNT", "MOP", "MRO", "MUR", "MVR", "MWK", "MXN", "MXV", "MYR", "MZN", "NAD", "NGN", "NIO", "NOK", "NPR", "NZD", "OMR", "PAB", "PEN", "PGK", "PHP", "PKR", "PLN", "PYG", "QAR", "RON", "RSD", "RUB", "RWF", "SAR", "SBD", "SCR", "SDG", "SEK", "SGD", "SHP", "SLL", "SOS", "SRD", "SSP", "STD", "SYP", "SZL", "THB", "TJS", "TMT", "TND", "TOP", "TRY", "TTD", "TWD", "TZS", "UAH", "UGX", "USD", "USN", "USS", "UYI", "UYU", "UZS", "VEF", "VND", "VUV", "WST", "XAF", "XAG", "XAU", "XBA", "XBB", "XBC", "XBD", "XCD", "XDR", "XFU", "XOF", "XPD", "XPF", "XPT", "XTS", "XXX", "YER", "ZAR", "ZMW" } );
-////        picker.setDisplayedValues(allcurrencies);
-////        picker.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
-//        picker2.setMinValue(0);
-//        picker2.setMaxValue(allcurrencies.length-1);
-////        picker2.setDisplayedValues( new String[] { "AED", "AFN", "ALL", "AMD", "ANG", "AOA", "ARS", "AUD", "AWG", "AZN", "BAM", "BBD", "BDT", "BGN", "BHD", "BIF", "BMD", "BND", "BOB", "BOV", "BRL", "BSD", "BTN", "BWP", "BYR", "BZD", "CAD", "CDF", "CHE", "CHF", "CHW", "CLF", "CLP", "CNY", "COP", "COU", "CRC", "CUC", "CUP", "CVE", "CZK", "DJF", "DKK", "DOP", "DZD", "EGP", "ERN", "ETB", "EUR", "FJD", "FKP", "GBP", "GEL", "GHS", "GIP", "GMD", "GNF", "GTQ", "GYD", "HKD", "HNL", "HRK", "HTG", "HUF", "IDR", "ILS", "INR", "IQD", "IRR", "ISK", "JMD", "JOD", "JPY", "KES", "KGS", "KHR", "KMF", "KPW", "KRW", "KWD", "KYD", "KZT", "LAK", "LBP", "LKR", "LRD", "LSL", "LTL", "LVL", "LYD", "MAD", "MDL", "MGA", "MKD", "MMK", "MNT", "MOP", "MRO", "MUR", "MVR", "MWK", "MXN", "MXV", "MYR", "MZN", "NAD", "NGN", "NIO", "NOK", "NPR", "NZD", "OMR", "PAB", "PEN", "PGK", "PHP", "PKR", "PLN", "PYG", "QAR", "RON", "RSD", "RUB", "RWF", "SAR", "SBD", "SCR", "SDG", "SEK", "SGD", "SHP", "SLL", "SOS", "SRD", "SSP", "STD", "SYP", "SZL", "THB", "TJS", "TMT", "TND", "TOP", "TRY", "TTD", "TWD", "TZS", "UAH", "UGX", "USD", "USN", "USS", "UYI", "UYU", "UZS", "VEF", "VND", "VUV", "WST", "XAF", "XAG", "XAU", "XBA", "XBB", "XBC", "XBD", "XCD", "XDR", "XFU", "XOF", "XPD", "XPF", "XPT", "XTS", "XXX", "YER", "ZAR", "ZMW" } );
-//        picker2.setDisplayedValues(allcurrencies);
-//        picker2.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
-
-
     }
 
     public void getString (){
@@ -167,29 +126,22 @@ public class currencyconvertFragment extends Fragment {
         }
     }
 
-    public void everythingsGood(String part1,String part2){
+    public void everythingsGood(final String part1, final String part2) {
         queue = Volley.newRequestQueue(getActivity().getApplicationContext());
-        String url ="https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22"+part1+part2+"%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=";
         // Request a string response from the provided URL.
+        String url = "http://api.fixer.io/latest?base=" + part1;
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try {
                             JSONObject jsonObject = new JSONObject(response);
-                            JSONObject currentrateinfo = jsonObject.getJSONObject("query");
-                            JSONObject json_results = currentrateinfo.getJSONObject("results");
-                            System.out.println(json_results);
+                            JSONObject currentrateinfo = jsonObject.getJSONObject("rates");
+                            System.out.println(currentrateinfo);
+                            System.out.println(currentrateinfo.getString(part2));
                             progressBar.setVisibility(View.INVISIBLE);
-
-                            JSONObject obj = json_results.getJSONObject("rate");
-
-//                            String name = obj.getString("Name");
-                            String url = obj.getString("Rate");
-//                            String date = obj.getString("Date");
-//                            String time = obj.getString("Time");
                             mTextView.setVisibility(View.VISIBLE);
-                            mTextView.setText("Current Rate :"+url);
+                            mTextView.setText("Current Rate :" + currentrateinfo.getString(part2));
                             loadActivity(v);
 
                         } catch (JSONException e) {

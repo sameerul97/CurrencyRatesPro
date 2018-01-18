@@ -9,8 +9,6 @@ import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Created by Sameer on 15/09/2017.
@@ -48,8 +46,8 @@ public class globalArrayList {
         else{ // Create a new SharedPreferences. This should happen only once ---- on first launch
             SharedPreferences.Editor editor = sharedPrefs.edit();
             Gson gson = new Gson();
-            al.add(0,"AED:United Arab Emirates dirham");
-            al.add(1,"AFN:Afghan afghani");
+            al.add(0, "AUD: Australian dollar ");
+            al.add(1, "BGN: Bulgarian lev");
             String json = gson.toJson(al);
 
             editor.putString("secretKey", json);
