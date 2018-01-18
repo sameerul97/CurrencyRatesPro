@@ -2,23 +2,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:xlmns="http://schemas.android.com/apk/res-auto"
     tools:context="com.studio.sameer.myapplication.homeFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
     <RelativeLayout
+        android:id="@+id/toplayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/toplayout"
         android:background="@color/lightYellow">
         <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/searchableSpinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/searchableSpinner"
-            android:entries="@array/allCurrencies"
-            android:padding="20dp"
             android:layout_marginBottom="13dp"
+            android:entries="@array/allcurrencies2"
+            android:padding="20dp"
             />
         <!--<Spinner-->
             <!--android:id="@+id/spinner"-->
@@ -31,16 +30,16 @@
     </RelativeLayout>
 
     <android.support.v4.widget.SwipeRefreshLayout
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:layout_below="@id/toplayout"
         android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toplayout"
         android:background="@color/DarkYellow">
 
         <ScrollView
+            android:id="@+id/scrollView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/scrollView2"
             android:layout_below="@+id/toplayout">
 
             <RelativeLayout
@@ -48,18 +47,18 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/textview"
                     android:layout_width="wrap_content"
                     android:layout_height = "wrap_content"
-                    android:id = "@+id/textview"
-                    android:textSize = "35dp"
-                    android:textColor="@color/white"
                     android:layout_alignParentTop = "true"
-                    android:layout_centerHorizontal = "true" />
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="35dp" />
 
                 <RelativeLayout
+                    android:id="@+id/relativeLayout2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/relativeLayout2"
                     android:layout_below="@id/textview"
                     android:padding="5dp"
                     android:visibility="invisible"
@@ -74,8 +73,8 @@
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:text="Currency Name"
                         android:paddingLeft="5dp"
+                        android:text="Currency Name"
                         android:textColor="@color/lightYellow"
                         android:textSize="16sp" />
 
@@ -96,19 +95,19 @@
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:text="Last Updated"
                         android:paddingEnd="5dp"
                         android:paddingRight="5dp"
+                        android:text="Last Updated"
                         android:textColor="@color/lightYellow"
                         android:textSize="16sp" />
                 </RelativeLayout>
                 <ProgressBar
+                    android:id="@+id/progressBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/progressBar"
-                    android:layout_below="@+id/textview"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true">
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textview">
                 </ProgressBar>
                 <!--<TextView-->
                     <!--android:layout_width="wrap_content"-->
@@ -124,10 +123,10 @@
                 <!--</TableLayout>-->
 
                 <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/relativeLayout2"
-                    android:id="@+id/recyclerView"
                     android:layout_marginTop="8dp">
 
                 </android.support.v7.widget.RecyclerView>
